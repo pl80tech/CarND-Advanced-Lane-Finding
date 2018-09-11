@@ -17,6 +17,17 @@ The goals / steps of this project are the following:
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
+---
+## Project code
+
+Here is my working repository for this project:
+
+https://github.com/pl80tech/CarND-Advanced-Lane-Finding
+
+It is imported from below original repository:
+
+https://github.com/udacity/CarND-Advanced-Lane-Finding
+
 [//]: # (Image References)
 
 [image1]: ./examples/undistort_output.png "Undistorted"
@@ -27,6 +38,7 @@ The goals / steps of this project are the following:
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
+---
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
