@@ -12,6 +12,8 @@ All that said, please be concise!  We're not looking for you to write a book her
 
 You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup.
 
+**==> Here is the link to my WriteUp : [link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/WriteUp.md)**
+
 The Project
 ---
 
