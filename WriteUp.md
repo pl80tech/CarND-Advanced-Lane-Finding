@@ -69,6 +69,33 @@ Here are the steps I used when calculating the matrix and distortion coefficient
 
 #### 2. Provide an example of a distortion corrected calibration image.
 
+The output images with detected corners can be found in following path: 
+
+ /output_images/corners_calibration\*.jpg ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/tree/master/output_images)). 
+
+The undistorted images can be found in following path: 
+
+ /output_images/undistorted_calibration\*.jpg ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/tree/master/output_images)). 
+
+Here are some examples of the undistorted image, showing together with its original image & image with detected corners for easy comparison:
+
+* calibration2.jpg (Original image, Image with detected corners, Undistorted image)
+
+	<img src="camera_cal/calibration2.jpg" width="280" title="calibration2.jpg"/>
+	<img src="output_images/corners_calibration2.jpg" width="280" title="calibration2.jpg - with corners"/>
+	<img src="output_images/undistorted_calibration2.jpg" width="280" title="calibration2.jpg - undistorted"/>
+
+* calibration3.jpg (Original image, Image with detected corners, Undistorted image)
+
+	<img src="camera_cal/calibration3.jpg" width="280" title="calibration3.jpg"/>
+	<img src="output_images/corners_calibration3.jpg" width="280" title="calibration3.jpg - with corners"/>
+	<img src="output_images/undistorted_calibration3.jpg" width="280" title="calibration3.jpg - undistorted"/>
+
+* calibration6.jpg (Original image, Image with detected corners, Undistorted image)
+
+	<img src="camera_cal/calibration6.jpg" width="280" title="calibration3.jpg"/>
+	<img src="output_images/corners_calibration6.jpg" width="280" title="calibration6.jpg - with corners"/>
+	<img src="output_images/undistorted_calibration6.jpg" width="280" title="calibration6.jpg - undistorted"/>
 
 ### Pipeline (single images)
 
