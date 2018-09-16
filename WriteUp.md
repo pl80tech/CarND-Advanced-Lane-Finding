@@ -47,15 +47,28 @@ https://github.com/udacity/CarND-Advanced-Lane-Finding
 
 ### Camera Calibration
 
-#### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
+#### 1. Briefly state how you computed the camera matrix and distortion coefficients.
 
-The code for this step is contained in the first code cell of the IPython notebook located in "./examples/example.ipynb" (or in lines # through # of the file called `some_file.py`).  
+Here are the steps I used when calculating the matrix and distortion coefficients for camera calibration.
+ 
+* Prepare a replicated array of coordinates (objp) with specific size (nx = 9, ny = 6) to handle object points
+* Prepare the arrays to save image points (imgpoints) & object points (objpoints)
+* Apply following processes to each calibration image (calibration\*.jpg)
+	- Change image to grayscale
+	- Call cv2.findChessboardCorners to find the chessboard corners
+	- If it detects the calibration image successfully, add (append) the detected corners as image points together with a copy of "objp" as object points
+	- Call cv2.drawChessboardCorners to draw the lines connnecting the detected chessboard corners
+	- Save the image with detected corners (in /output_images/ folder)
+* Apply camera calibration (by calling cv2.calibrateCamera) with the imgpoints & objpoints taken above to get the matrix (mtx) and distortion coefficients (dist) of the camera
+* Save the matrix (mtx) and distortion coefficients (dist) to local file (using pickle) for later use
+* Load the saved data (mtx, dist)
+ 
+ *Note:* Doing this can help to avoid running the calibration from the beginning when restarting kernel, etc
+* Call cv2.undistort to undistort each image with calibrated data (mtx & dist)
+* Save the undistorted images (in /output_images/ folder) 
 
-I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
+#### 2. Provide an example of a distortion corrected calibration image.
 
-I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
-
-![alt text][image1]
 
 ### Pipeline (single images)
 
