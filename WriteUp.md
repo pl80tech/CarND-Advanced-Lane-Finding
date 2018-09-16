@@ -121,9 +121,44 @@ Here are the example results after applying the distortion-corrected process men
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
+I implemented below helper functions to generate a binary image with various thresholds of color & gradient:
 
-![alt text][image3]
+* abs_sobel_thresh():
+* mag_thresh():
+* dir_threshold():
+* color_thresh():
+* hls_select():
+* combined_thresh():
+
+Here are the output images with some combinations of gradient & color threshold:
+
+* test1.jpg
+
+	<img src="test_images/test1.jpg" width="210" title="test1.jpg"/>
+	<img src="output_binary_images/gradx_test1.jpg" width="210" title="test1.jpg - gradient x"/>
+	<img src="output_binary_images/grady_test1.jpg" width="210" title="test1.jpg - gradient y"/>
+	<img src="output_binary_images/mag_test1.jpg" width="210" title="test1.jpg - magnitude"/>
+
+	<img src="output_binary_images/dir_test1.jpg" width="210" title="test1.jpg - direction"/>
+	<img src="output_binary_images/color_test1.jpg" width="210" title="test1.jpg - color"/>
+	<img src="output_binary_images/hls_test1.jpg" width="210" title="test1.jpg - HLS S-channel"/>
+	<img src="output_binary_images/combined_test1.jpg" width="210" title="test1.jpg - combined"/>			
+
+* test2.jpg
+
+	<img src="test_images/test2.jpg" width="210" title="test1.jpg"/>
+	<img src="output_binary_images/gradx_test2.jpg" width="210" title="test2.jpg - gradx"/>
+	<img src="output_binary_images/grady_test2.jpg" width="210" title="test2.jpg - grady"/>
+	<img src="output_binary_images/mag_test2.jpg" width="210" title="test2.jpg - magnitude"/>
+
+	<img src="output_binary_images/dir_test2.jpg" width="210" title="test2.jpg - direction"/>
+	<img src="output_binary_images/color_test2.jpg" width="210" title="test2.jpg - color"/>
+	<img src="output_binary_images/hls_test2.jpg" width="210" title="test2.jpg - HLS S-channel"/>
+	<img src="output_binary_images/combined_test2.jpg" width="210" title="test2.jpg - combined"/>
+
+* Others:
+ 
+ All thresholded binary image (generated from test images) are shown in ThresholdedImage.md ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/ThresholdedImage.md))
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
