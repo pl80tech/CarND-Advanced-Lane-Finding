@@ -101,8 +101,23 @@ Here are some examples of the undistorted image, showing together with its origi
 
 #### 1. Provide an example of a distortion-corrected image.
 
-To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![alt text][image2]
+Here are the example results after applying the distortion-corrected process mentioned above to the raw images in "/test_images/" folder:
+
+* test1.jpg (Original image & Undistorted image)
+
+	<img src="test_images/test1.jpg" width="420" title="test1.jpg - original"/>
+	<img src="output_images/undistorted_test1.jpg" width="420" title="test1.jpg - undistorted"/>
+
+* straight_lines1.jpg (Original image & Undistorted image)
+
+	<img src="test_images/straight_lines1.jpg" width="420" title="straight_lines1.jpg - original"/>
+	<img src="output_images/undistorted_straight_lines1.jpg" width="420" title="straight_lines1.jpg - undistorted"/>
+
+*Note:* All undistorted output images can be found in following paths: 
+
+* /output_images/undistorted_test\*.jpg ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/tree/master/output_images)).
+ 
+* /output_images/undistorted_straight\*.jpg ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/tree/master/output_images)).
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
