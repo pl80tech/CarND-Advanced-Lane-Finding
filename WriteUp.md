@@ -173,18 +173,18 @@ Here are some examples of transformed image:
 
 * test1.jpg
 
-	<img src="test_images/test1.jpg" width="400" title="Original"/>
-	<img src="output_binary_images/warped_test1.jpg" width="400" title="Perspective transform"/>
+	<img src="output_images/undistorted_test1.jpg" width="400" title="Original"/>
+	<img src="output_images/warped_test1.jpg" width="400" title="Perspective transform"/>
 
 * test2.jpg
 
-	<img src="test_images/test2.jpg" width="400" title="Original"/>
-	<img src="output_binary_images/warped_test2.jpg" width="400" title="Perspective transform"/>
+	<img src="output_images/undistorted_test2.jpg" width="400" title="Original"/>
+	<img src="output_images/warped_test2.jpg" width="400" title="Perspective transform"/>
 
 * straight_lines1.jpg
 
-	<img src="test_images/straight_lines1.jpg" width="400" title="Original"/>
-	<img src="output_binary_images/warped_straight_lines1.jpg" width="400" title="Combined thesholded"/>
+	<img src="output_images/undistorted_straight_lines1.jpg" width="400" title="Original"/>
+	<img src="output_images/warped_straight_lines1.jpg" width="400" title="Combined thesholded"/>
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
