@@ -159,6 +159,32 @@ Here are the output images with some combinations of gradient & color threshold:
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
+Here are the steps I used in my implementation:
+
+* Choose the hard-coded source (src) and destination (dst) points as follows:
+	- 
+	- 
+* Pass src & dst together with targeted binary image (img) to function warped()
+* Inside warped():
+	- Call cv2.getPerspectiveTransform(src, dst) to calculate the transform matrix (M) with given src & dst
+	- Call cv2.warpPerspective to execute perpective transform with the calculated matrix (M)
+
+Here are some examples of transformed image:
+
+* test1.jpg
+
+	<img src="test_images/test1.jpg" width="400" title="Original"/>
+	<img src="output_binary_images/warped_test1.jpg" width="400" title="Perspective transform"/>
+
+* test2.jpg
+
+	<img src="test_images/test2.jpg" width="400" title="Original"/>
+	<img src="output_binary_images/warped_test2.jpg" width="400" title="Perspective transform"/>
+
+* straight_lines1.jpg
+
+	<img src="test_images/straight_lines1.jpg" width="400" title="Original"/>
+	<img src="output_binary_images/warped_straight_lines1.jpg" width="400" title="Combined thesholded"/>
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
