@@ -62,20 +62,17 @@ Here are the steps I used when calculating the matrix and distortion coefficient
 * Apply camera calibration (by calling cv2.calibrateCamera) with the imgpoints & objpoints taken above to get the matrix (mtx) and distortion coefficients (dist) of the camera
 * Save the matrix (mtx) and distortion coefficients (dist) to local file (using pickle) for later use
 * Load the saved data (mtx, dist)
- 
- *Note:* Doing this can help to avoid running the calibration from the beginning when restarting kernel, etc
+	- *Note:* Doing this can help to avoid running the calibration from the beginning when restarting kernel, etc
 * Call cv2.undistort to undistort each image with calibrated data (mtx & dist)
 * Save the undistorted images (in /output_images/ folder) 
 
 #### 2. Provide an example of a distortion corrected calibration image.
 
-The output images with detected corners can be found in following path: 
+The output images with detected corners and undistorted images are saved in following path: 
 
- /output_images/corners_calibration\*.jpg ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/tree/master/output_images)). 
+* /output_images/corners_calibration\*.jpg ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/tree/master/output_images)). 
 
-The undistorted images can be found in following path: 
-
- /output_images/undistorted_calibration\*.jpg ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/tree/master/output_images)). 
+* /output_images/undistorted_calibration\*.jpg ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/tree/master/output_images)). 
 
 Here are some examples of the undistorted image, showing together with its original image & image with detected corners for easy comparison:
 
