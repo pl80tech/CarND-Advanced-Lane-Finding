@@ -154,8 +154,8 @@ Here are the output images with some combinations of gradient & color threshold:
 	<img src="output_binary_images/combined_test2.jpg" width="210" title="test2.jpg - combined"/>
 
 * Others:
- 
- All thresholded binary image (generated from test images) are shown in ThresholdedImage.md ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/ThresholdedImage.md))
+
+	All thresholded binary image (generated from test images) are shown in ThresholdedImage.md ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/ThresholdedImage.md))
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -193,6 +193,10 @@ Here are some examples of transformed image:
 
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
+
+Here is an example of the image with detected lane lines & curvature information:
+
+<img src="output_images/test1_curvature_info.jpg" width="640" title="test1.jpg - final result"/>
 
 ---
 
