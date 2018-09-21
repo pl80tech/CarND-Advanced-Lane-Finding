@@ -188,6 +188,20 @@ Here are some examples of transformed image:
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
+Here are the main steps I used to calculate the curvature information.
+
+* Define conversion rate in x and y from pixels space to meters
+* Change the given lane coordinates (*ploty, left_fitx, right_fitx* - simulated in previous step) in pixel space to meter space
+* Pass the new coordinates (in meter space) to *np.polyfit()* to fit second order polynomials for left & right line
+* Use the mathematic equation defined in [link](https://www.intmath.com/applications-differentiation/8-radius-curvature.php) to calculate the left & right curvature radius (*left_curverad*, *right_curverad*) of the lane points whose y-value are correspondent to the bottom of the image.
+* Take the average of *left_curverad* & *right_curverad* as final radius of curvature 
+* Calculate the position of left line & right lane nearest to the camera then take the average as the center of the 2 lanes (*position*)
+* Calculate the distance from center of the lane (*position*) to center of the image. 
+
+The details are implemented with comments for each process in below functions on the project file ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/P2-AdvancedLaneFinding.ipynb)):
+
+* *measure_curvature_radius_position()*: calculate radius of curvature & the relative position (distance from center) from simulated lane coordinates
+* *add_radius_distance()*: combine the calculated information to the image being processed
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
