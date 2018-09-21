@@ -28,6 +28,13 @@ It is imported from below original repository:
 
 https://github.com/udacity/CarND-Advanced-Lane-Finding
 
+---
+### Note
+
+In this writeup, some output videos are embedded for demonstratation and explanation. However, video can't be displayed in markdown file when viewing on GitHub due to no support.
+
+To view these embedded videos, please open this file locally in browser (with markdown viewer support). These videos can also be found in "output_videos" folder.
+
 [//]: # (Image References)
 
 [image1]: ./examples/undistort_output.png "Undistorted"
