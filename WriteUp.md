@@ -117,12 +117,18 @@ Here are the example results after applying the distortion-corrected process men
 
 I implemented below helper functions to generate a binary image with various thresholds of color & gradient:
 
-* abs_sobel_thresh():
-* mag_thresh():
-* dir_threshold():
-* color_thresh():
-* hls_select():
-* combined_thresh():
+* *abs_sobel_thresh()*: create a binary image with the given sobel kernel size and threshold values of gradient (on x & y orientation)
+* *mag_thresh()*: create a binary image with the given sobel kernel size and threshold values of gradient magnitude
+* *dir_threshold()*: create a binary image with the given sobel kernel size and threshold values of gradient direction
+* *color_thresh()*: create a binary image with a given range of color
+* *hls_select()*: create a binary image with the threshold of S-channel on HLS
+* *combined_thresh()*: create a binary image by combining several thresholds
+
+To easily select thresholding method for processing & tuning image/video, I implemented *thresh_binary()* which can call below methods by specifying *threshold_method*:
+
+* *threshold_method* = 1 => color threshold 
+* *threshold_method* = 2 => S-Channel (HLS) threshold
+* *threshold_method* = 3 => combined threshold
 
 Here are the output images with some combinations of gradient & color threshold:
 
