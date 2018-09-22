@@ -216,6 +216,9 @@ The details are implemented with comments for each process in below functions on
 * *search_around_poly()*: search around the polynomial and draw the lane lines with colors
 * *process_image()*: a pipepline to process each image and generate output image with detected lane lines and curvature information
 
+<span style="color:red;">Notes:</span>	
+There are some implementations for searching method 3 (using convolution) in the section "Another Sliding Window Search" of [project file](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/P2-AdvancedLaneFinding.ipynb). However, it is just for investigating/reference purpose and finally not fine-tuned for using to process the videos. Therefore, it is not explained here.
+
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
 Here are the main steps I used to calculate the curvature information.
