@@ -48,20 +48,20 @@ To view these embedded videos, please open this file locally in browser (with ma
 
 Here are the steps I used when calculating the matrix and distortion coefficients for camera calibration.
  
-* Prepare a replicated array of coordinates (objp) with specific size (nx = 9, ny = 6) to handle object points
-* Prepare the arrays to save image points (imgpoints) & object points (objpoints)
+* Prepare a replicated array of coordinates (*objp*) with specific size (*nx = 9, ny = 6*) to handle object points
+* Prepare the arrays to save image points (*imgpoints*) & object points (*objpoints*)
 * Apply following processes to each calibration image (calibration\*.jpg)
 	- Change image to grayscale
-	- Call cv2.findChessboardCorners to find the chessboard corners
-	- If it detects the calibration image successfully, add (append) the detected corners as image points together with a copy of "objp" as object points
-	- Call cv2.drawChessboardCorners to draw the lines connnecting the detected chessboard corners
-	- Save the image with detected corners (in /output_images/ folder)
-* Apply camera calibration (by calling cv2.calibrateCamera) with the imgpoints & objpoints taken above to get the matrix (mtx) and distortion coefficients (dist) of the camera
-* Save the matrix (mtx) and distortion coefficients (dist) to local file (using pickle) for later use
-* Load the saved data (mtx, dist)
+	- Call *cv2.findChessboardCorners* to find the chessboard corners
+	- If it detects the calibration image successfully, add (append) the detected corners as image points together with a copy of "*objp*" as object points
+	- Call *cv2.drawChessboardCorners* to draw the lines connnecting the detected chessboard corners
+	- Save the image with detected corners (in */output_images/* folder)
+* Apply camera calibration (by calling *cv2.calibrateCamera*) with the imgpoints & objpoints taken above to get the matrix (*mtx*) and distortion coefficients (*dist*) of the camera
+* Save the matrix (*mtx*) and distortion coefficients (*dist*) to local file (using pickle) for later use
+* Load the saved data (*mtx*, *dist*)
 	- *Note:* Doing this can help to avoid running the calibration from the beginning when restarting kernel, etc
-* Call cv2.undistort to undistort each image with calibrated data (mtx & dist)
-* Save the undistorted images (in /output_images/ folder) 
+* Call *cv2.undistort* to undistort each image with calibrated data (*mtx* & *dist*)
+* Save the undistorted images (in */output_images/* folder) 
 
 #### 2. Provide an example of a distortion corrected calibration image.
 
