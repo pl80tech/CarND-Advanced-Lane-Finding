@@ -164,13 +164,23 @@ Here are the output images with some combinations of gradient & color threshold:
 
 Here are the steps I used in my implementation:
 
-* Choose the hard-coded source (src) and destination (dst) points as follows:
-	- 
-	- 
-* Pass src & dst together with targeted binary image (img) to function warped()
-* Inside warped():
-	- Call cv2.getPerspectiveTransform(src, dst) to calculate the transform matrix (M) with given src & dst
-	- Call cv2.warpPerspective to execute perpective transform with the calculated matrix (M)
+* Choose the hard-coded source (*src*) and destination (*dst*) points as follows (similar with the value in template file):
+```python
+src = np.float32(
+    [[(img_size[0] / 2) - 55, img_size[1] / 2 + 100],
+    [((img_size[0] / 6) - 10), img_size[1]],
+    [(img_size[0] * 5 / 6) + 60, img_size[1]],
+    [(img_size[0] / 2 + 55), img_size[1] / 2 + 100]])
+dst = np.float32(
+    [[(img_size[0] / 4), 0],
+    [(img_size[0] / 4), img_size[1]],
+    [(img_size[0] * 3 / 4), img_size[1]],
+    [(img_size[0] * 3 / 4), 0]])
+```
+* Pass *src* & *dst* together with targeted binary image (*img*) to function *warped()*
+* Inside *warped()*:
+	- Call *cv2.getPerspectiveTransform(src, dst)* to calculate the transform matrix (*M*)
+	- Call *cv2.warpPerspective()* to execute perpective transform with the calculated matrix (*M*)
 
 Here are some examples of transformed image:
 
@@ -186,8 +196,10 @@ Here are some examples of transformed image:
 
 * straight_lines1.jpg
 
-	<img src="output_images/undistorted_straight_lines1.jpg" width="400" title="Original"/>
-	<img src="output_images/warped_straight_lines1.jpg" width="400" title="Combined thesholded"/>
+	<img src="output_images/straight_img_undist_lines.jpg" width="400" title="Original"/>
+	<img src="output_images/straight_img_warped_lines.jpg" width="400" title="Combined thesholded"/>
+
+In the perspective transformation of test image with straight lane lines (above), the left & right lane line are nearly in parallel. It means that the selected *src* & *dst* is quite good.
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
