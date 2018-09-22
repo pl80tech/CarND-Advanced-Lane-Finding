@@ -203,11 +203,46 @@ In the perspective transformation of test image with straight lane lines (above)
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-Here are the main steps I used to identify lane-line.
+I implemented below search methods to identify lane-line:
 
-* 
-* 
-* 
+* Search method 1: process each frame separately to find lane pixels & fit a polynomial
+* Search method 2: use the parameters from last frame to search lane pixels & fit a polynomial 
+
+Here are the main steps I used in my implementation:
+
+##### (1) Find lane pixels
+
+* Take a histogram of the bottom half of the image
+* Find the peak of the left and right halves of the histogram as the starting point for the left and right lines
+* Define the sliding windows (with optimized size) & step through each window as follows:
+	- Search for all nonzero pixels within the window
+	- Add/Append the indices of the detected pixels to the lists
+	- If the number of detected pixels exceed the threshold (*minpix*), recenter next window on the mean position
+* Concatenate the arrays of indices which previously was a list of lists of pixels
+* Extract left and right line pixel positions
+
+##### (2) Search around to detect lane pixels & fit the detected lane with color lines
+
+* With search method 1:
+	- Find lane pixels as described in (1) for every frame
+	- Fit a polynomial from detected pixels
+* With search method 2:
+	- Load the saved parameters of last frame. If no data is saved (first frame), create it as follows:
+		- Find lane pixels as described in (1)
+		- Calculate & save polynomial fit parameters for left & right lane
+		- Load the saved parameters
+	- Set the area of search based on activated x-values within the +/- margin of polynomial function
+	- Search for all nonzero pixels within the area
+	- Fit a polynomial from detected pixels
+	- Check whether the detected lines is suitable for further processing or not by following conditions:
+		- Average x-value of both lines are within the image (smaller than 1280)
+		- Average distance between right & left lane make sense (bigger than 400)
+	- If not suitable (sometimes happen), apply search method 1 for current frame
+
+##### (3) Highlight the detected lane lines & moving area with colors
+
+* Define the coordinates for left lane (*left_line_pts*), right lane (*right_line_pts*) & middle area between the 2 lanes (*middle_area*)
+* Call *cv2.fillPoly()* to highlight specified areas with specific colors (Red & Green)
 
 The details are implemented with comments for each process in below functions on the [project file](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/P2-AdvancedLaneFinding.ipynb):
 
