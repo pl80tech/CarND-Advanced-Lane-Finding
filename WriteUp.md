@@ -146,6 +146,9 @@ Here are the output images with some combinations of gradient & color threshold:
 	<img src="output_binary_images/dir_test1.jpg" width="210" title="test1.jpg - direction"/>
 	<img src="output_binary_images/color_test1.jpg" width="210" title="test1.jpg - color"/>
 	<img src="output_binary_images/hls_test1.jpg" width="210" title="test1.jpg - HLS S-channel"/>
+	<img src="output_binary_images/luv_test1.jpg" width="210" title="LUV L-Channel"/>
+
+	<img src="output_binary_images/lab_test1.jpg" width="210" title="LAB B-Channel"/>
 	<img src="output_binary_images/combined_test1.jpg" width="210" title="test1.jpg - combined"/>			
 
 * test2.jpg
@@ -158,6 +161,9 @@ Here are the output images with some combinations of gradient & color threshold:
 	<img src="output_binary_images/dir_test2.jpg" width="210" title="test2.jpg - direction"/>
 	<img src="output_binary_images/color_test2.jpg" width="210" title="test2.jpg - color"/>
 	<img src="output_binary_images/hls_test2.jpg" width="210" title="test2.jpg - HLS S-channel"/>
+	<img src="output_binary_images/luv_test2.jpg" width="210" title="LUV L-Channel"/>
+
+	<img src="output_binary_images/lab_test2.jpg" width="210" title="LAB B-Channel"/>
 	<img src="output_binary_images/combined_test2.jpg" width="210" title="test2.jpg - combined"/>
 
 * Others:
