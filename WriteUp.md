@@ -122,13 +122,17 @@ I implemented below helper functions to generate a binary image with various thr
 * *dir_threshold()*: create a binary image with the given sobel kernel size and threshold values of gradient direction
 * *color_thresh()*: create a binary image with a given range of color
 * *hls_select()*: create a binary image with the threshold of S-channel on HLS
+* *luv_select()*: create a binary image with the threshold of L-channel on LUV
+* *lab_select()*: create a binary image with the threshold of B-channel on LAB
 * *combined_thresh()*: create a binary image by combining several thresholds
 
 To easily select thresholding method for processing & tuning image/video, I implemented *thresh_binary()* which can call below methods by specifying *threshold_method*:
 
 * *threshold_method* = 1 => color threshold 
 * *threshold_method* = 2 => S-Channel (HLS) threshold
-* *threshold_method* = 3 => combined threshold
+* *threshold_method* = 3 => L-Channel (LUV) threshold
+* *threshold_method* = 4 => B-Channel (LAB) threshold
+* *threshold_method* = 5 => combined threshold
 
 Here are the output images with some combinations of gradient & color threshold:
 
@@ -236,7 +240,7 @@ Here are the main steps I used in my implementation:
 	- Fit a polynomial from detected pixels
 	- Check whether the detected lines is suitable for further processing or not by following conditions:
 		- Average x-value of both lines are within the image (smaller than 1280)
-		- Average distance between right & left lane make sense (bigger than 400)
+		- Average distance between right & left lane is within suitable range (bigger than 680 and smaller than 820)
 	- If not suitable (sometimes happen), apply search method 1 for current frame
 
 ##### (3) Highlight the detected lane lines & moving area with colors
