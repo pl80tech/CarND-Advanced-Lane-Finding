@@ -128,11 +128,15 @@ I implemented below helper functions to generate a binary image with various thr
 
 To easily select thresholding method for processing & tuning image/video, I implemented *thresh_binary()* which can call below methods by specifying *threshold_method*:
 
-* *threshold_method* = 1 => color threshold 
-* *threshold_method* = 2 => S-Channel (HLS) threshold
-* *threshold_method* = 3 => L-Channel (LUV) threshold
-* *threshold_method* = 4 => B-Channel (LAB) threshold
-* *threshold_method* = 5 => combined threshold
+* *threshold_method* = 1 => Gradient threshold (x axis) 
+* *threshold_method* = 2 => Gradient threshold (y axis)
+* *threshold_method* = 3 => Magnitude threshold
+* *threshold_method* = 4 => Direction threshold
+* *threshold_method* = 5 => Color threshold (grayscale)
+* *threshold_method* = 6 => S-Channel (HLS) threshold
+* *threshold_method* = 7 => L-Channel (LUV) threshold
+* *threshold_method* = 8 => B-Channel (LAB) threshold
+* *threshold_method* = 9 => Combined threshold
 
 Here are the output images with some combinations of gradient & color threshold:
 
