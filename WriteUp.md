@@ -177,6 +177,19 @@ To easily select thresholding method for processing & tuning image/video, I impl
 
 Here are the output images with some combinations of gradient & color threshold:
 
+| Threshold method              | test1.jpg                  | test2.jpg                  |
+|:-----------------------------:|:--------------------------:|:--------------------------:|
+| Original                      |![alt text][test1]          |![alt text][test2]          |
+| Gradtitude X                  |![alt text][test1_gradX]    |![alt text][test2_gradX]    |
+| Gradtitude Y                  |![alt text][test1_gradY]    |![alt text][test2_gradY]    |
+| Magnitude                     |![alt text][test1_mag]      |![alt text][test2_mag]      |
+| Direction                     |![alt text][test1_dir]      |![alt text][test2_dir]      |
+| Color                         |![alt text][test1_color]    |![alt text][test2_color]    |
+| HLS S-Channel                 |![alt text][test1_hls]      |![alt text][test2_hls]      |
+| LUV L-Channel                 |![alt text][test1_luv]      |![alt text][test2_luv]      |
+| LAB B-Channel                 |![alt text][test1_lab]      |![alt text][test2_lab]      |
+| Combined                      |![alt text][test1_combined] |![alt text][test2_combined] |
+
 * test1.jpg
 
 	<img src="test_images/test1.jpg" width="210" title="test1.jpg"/>
