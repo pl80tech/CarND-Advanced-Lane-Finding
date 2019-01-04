@@ -39,6 +39,17 @@ This is my writeup for the project "Advanced Lane Finding" of Self Driving Car N
 [test2_lab]: ./output_binary_images/lab_test2.jpg "test2 - LAB B-channel"
 [test2_combined]: ./output_binary_images/combined_test2.jpg "test2 - Combined"
 
+[straight2]: ./test_images/straight_lines2.jpg "straight_lines2 - Original"
+[straight2_gradx]: ./output_binary_images/gradx_straight_lines2.jpg "straight_lines2 - Grad X"
+[straight2_grady]: ./output_binary_images/grady_straight_lines2.jpg "straight_lines2 - Grad Y"
+[straight2_mag]: ./output_binary_images/mag_straight_lines2.jpg "straight_lines2 - Magnitude"
+[straight2_dir]: ./output_binary_images/dir_straight_lines2.jpg "straight_lines2 - Direction"
+[straight2_color]: ./output_binary_images/color_straight_lines2.jpg "straight_lines2 - Color"
+[straight2_hls]: ./output_binary_images/hls_straight_lines2.jpg "straight_lines2 - HLS S-channel"
+[straight2_luv]: ./output_binary_images/luv_straight_lines2.jpg "straight_lines2 - LUV L-channel"
+[straight2_lab]: ./output_binary_images/lab_straight_lines2.jpg "straight_lines2 - LAB B-channel"
+[straight2_combined]: ./output_binary_images/combined_straight_lines2.jpg "straight_lines2 - Combined"
+
 ---
 
 ## About Advanced Lane Finding Project
