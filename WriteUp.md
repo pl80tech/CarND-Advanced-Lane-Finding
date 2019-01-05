@@ -188,18 +188,18 @@ To easily select thresholding method for processing & tuning image/video, I impl
 
 Here are the output images with some combinations of gradient & color threshold:
 
-| Threshold method              | test1.jpg                  | test2.jpg                  |
-|:-----------------------------:|:--------------------------:|:--------------------------:|
-| Original                      |![alt text][test1]          |![alt text][test2]          |
-| Gradtitude X                  |![alt text][test1_gradX]    |![alt text][test2_gradX]    |
-| Gradtitude Y                  |![alt text][test1_gradY]    |![alt text][test2_gradY]    |
-| Magnitude                     |![alt text][test1_mag]      |![alt text][test2_mag]      |
-| Direction                     |![alt text][test1_dir]      |![alt text][test2_dir]      |
-| Color                         |![alt text][test1_color]    |![alt text][test2_color]    |
-| HLS S-Channel                 |![alt text][test1_hls]      |![alt text][test2_hls]      |
-| LUV L-Channel                 |![alt text][test1_luv]      |![alt text][test2_luv]      |
-| LAB B-Channel                 |![alt text][test1_lab]      |![alt text][test2_lab]      |
-| Combined                      |![alt text][test1_combined] |![alt text][test2_combined] |
+| Threshold method              | test1.jpg                  | test2.jpg                  | straight2.jpg                  |
+|:-----------------------------:|:--------------------------:|:--------------------------:|:------------------------------:|
+| Original                      |![alt text][test1]          |![alt text][test2]          |![alt text][straight2]          |
+| Gradtitude X                  |![alt text][test1_gradX]    |![alt text][test2_gradX]    |![alt text][straight2_gradX]    |
+| Gradtitude Y                  |![alt text][test1_gradY]    |![alt text][test2_gradY]    |![alt text][straight2_gradY]    |
+| Magnitude                     |![alt text][test1_mag]      |![alt text][test2_mag]      |![alt text][straight2_mag]      |
+| Direction                     |![alt text][test1_dir]      |![alt text][test2_dir]      |![alt text][straight2_dir]      |
+| Color                         |![alt text][test1_color]    |![alt text][test2_color]    |![alt text][straight2_color]    |
+| HLS S-Channel                 |![alt text][test1_hls]      |![alt text][test2_hls]      |![alt text][straight2_hls]      |
+| LUV L-Channel                 |![alt text][test1_luv]      |![alt text][test2_luv]      |![alt text][straight2_luv]      |
+| LAB B-Channel                 |![alt text][test1_lab]      |![alt text][test2_lab]      |![alt text][straight2_lab]      |
+| Combined                      |![alt text][test1_combined] |![alt text][test2_combined] |![alt text][straight2_combined] |
 
 * Others:
 
