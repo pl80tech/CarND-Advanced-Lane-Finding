@@ -50,6 +50,13 @@ This is my writeup for the project "Advanced Lane Finding" of Self Driving Car N
 [straight2_lab]: ./output_binary_images/lab_straight_lines2.jpg "straight_lines2 - LAB B-channel"
 [straight2_combined]: ./output_binary_images/combined_straight_lines2.jpg "straight_lines2 - Combined"
 
+[test1_undistorted]: ./output_images/undistorted_test1.jpg "test1 - undistorted"
+[test1_warped]: ./output_images/warped_test1.jpg "test1 - warped"
+[test2_undistorted]: ./output_images/undistorted_test2.jpg "test2 - undistorted"
+[test2_warped]: ./output_images/warped_test2.jpg "test2 - warped"
+[straight_undistorted]: ./output_images/straight_img_undist_lines.jpg "straight line - undistorted"
+[straight_warped]: ./output_images/straight_img_warped_lines.jpg "straight line - warped"
+
 ---
 
 ## About Advanced Lane Finding Project
