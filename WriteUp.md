@@ -236,6 +236,12 @@ dst = np.float32(
 
 Here are some examples of transformed image:
 
+| Test images           | Original image (undistorted)      | Transformed image (warped)        |
+|:---------------------:|:---------------------------------:|:---------------------------------:|
+| test1.jpg             |![alt text][test1_undistorted]     |![alt text][test1_warped]          |
+| test2.jpg             |![alt text][test2_undistorted]     |![alt text][test2_warped]          |
+| straight_lines1.jpg   |![alt text][straight_undistorted]  |![alt text][straight_warped]       |
+
 * test1.jpg
 
 	<img src="output_images/undistorted_test1.jpg" width="400" title="Original"/>
