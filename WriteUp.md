@@ -242,21 +242,6 @@ Here are some examples of transformed image:
 | test2.jpg             |![alt text][test2_undistorted]     |![alt text][test2_warped]          |
 | straight_lines1.jpg   |![alt text][straight_undistorted]  |![alt text][straight_warped]       |
 
-* test1.jpg
-
-	<img src="output_images/undistorted_test1.jpg" width="400" title="Original"/>
-	<img src="output_images/warped_test1.jpg" width="400" title="Perspective transform"/>
-
-* test2.jpg
-
-	<img src="output_images/undistorted_test2.jpg" width="400" title="Original"/>
-	<img src="output_images/warped_test2.jpg" width="400" title="Perspective transform"/>
-
-* straight_lines1.jpg
-
-	<img src="output_images/straight_img_undist_lines.jpg" width="400" title="Original"/>
-	<img src="output_images/straight_img_warped_lines.jpg" width="400" title="Combined thesholded"/>
-
 In the perspective transformation of test image with straight lane lines (above), the left & right lane line are nearly in parallel. It means that the selected *src* & *dst* is quite good.
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
