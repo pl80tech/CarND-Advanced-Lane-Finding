@@ -138,6 +138,12 @@ The output images with detected corners and undistorted images are saved in foll
 
 Here are some examples of the undistorted image, showing together with its original image & image with detected corners for easy comparison:
 
+| Original image              | With detected corners       | Undistorted image              |
+|:---------------------------:|:---------------------------:|:------------------------------:|
+|![alt text][cal2_orig]       |![alt text][cal2_corners]    |![alt text][cal2_undistorted]   |
+|![alt text][cal3_orig]       |![alt text][cal3_corners]    |![alt text][cal3_undistorted]   |
+|![alt text][cal6_orig]       |![alt text][cal6_corners]    |![alt text][cal6_undistorted]   |
+
 * calibration2.jpg (Original image, Image with detected corners, Undistorted image)
 
 	<img src="camera_cal/calibration2.jpg" width="280" title="calibration2.jpg"/>
