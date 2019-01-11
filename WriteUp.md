@@ -144,24 +144,6 @@ Here are some examples of the undistorted image, showing together with its origi
 |![alt text][cal3_orig]       |![alt text][cal3_corners]    |![alt text][cal3_undistorted]   |
 |![alt text][cal6_orig]       |![alt text][cal6_corners]    |![alt text][cal6_undistorted]   |
 
-* calibration2.jpg (Original image, Image with detected corners, Undistorted image)
-
-	<img src="camera_cal/calibration2.jpg" width="280" title="calibration2.jpg"/>
-	<img src="output_images/corners_calibration2.jpg" width="280" title="calibration2.jpg - with corners"/>
-	<img src="output_images/undistorted_calibration2.jpg" width="280" title="calibration2.jpg - undistorted"/>
-
-* calibration3.jpg (Original image, Image with detected corners, Undistorted image)
-
-	<img src="camera_cal/calibration3.jpg" width="280" title="calibration3.jpg"/>
-	<img src="output_images/corners_calibration3.jpg" width="280" title="calibration3.jpg - with corners"/>
-	<img src="output_images/undistorted_calibration3.jpg" width="280" title="calibration3.jpg - undistorted"/>
-
-* calibration6.jpg (Original image, Image with detected corners, Undistorted image)
-
-	<img src="camera_cal/calibration6.jpg" width="280" title="calibration3.jpg"/>
-	<img src="output_images/corners_calibration6.jpg" width="280" title="calibration6.jpg - with corners"/>
-	<img src="output_images/undistorted_calibration6.jpg" width="280" title="calibration6.jpg - undistorted"/>
-
 ### Pipeline - single images
 
 #### 1. Provide an example of a distortion-corrected image.
