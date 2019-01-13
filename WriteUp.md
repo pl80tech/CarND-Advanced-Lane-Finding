@@ -158,16 +158,6 @@ Here are the example results after applying the distortion-corrected process men
 |test1.jpg             |![alt text][test1]             |![alt text][test1_undistorted]            |
 |straight_lines1.jpg   |![alt text][straight_lines1]   |![alt text][straight_lines1_undistorted]  |
 
-* test1.jpg (Original image & Undistorted image)
-
-	<img src="test_images/test1.jpg" width="420" title="test1.jpg - original"/>
-	<img src="output_images/undistorted_test1.jpg" width="420" title="test1.jpg - undistorted"/>
-
-* straight_lines1.jpg (Original image & Undistorted image)
-
-	<img src="test_images/straight_lines1.jpg" width="420" title="straight_lines1.jpg - original"/>
-	<img src="output_images/undistorted_straight_lines1.jpg" width="420" title="straight_lines1.jpg - undistorted"/>
-
 *Note:* All undistorted output images can be found in following paths: 
 
 * /output_images/undistorted_test\*.jpg ([link](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/tree/master/output_images)).
