@@ -67,6 +67,9 @@ This is my writeup for the project "Advanced Lane Finding" of Self Driving Car N
 [cal6_corners]: ./output_images/corners_calibration6.jpg "calibration6.jpg - corners"
 [cal6_undistorted]: ./output_images/undistorted_calibration6.jpg "calibration6.jpg - undistorted"
 
+[straight_lines1]: ./test_images/straight_lines1.jpg "straight_lines1 - Original"
+[straight_lines1_undistorted]: ./output_images/undistorted_straight_lines1.jpg "straight_lines1 - Undistorted"
+
 ---
 
 ## About Advanced Lane Finding Project
