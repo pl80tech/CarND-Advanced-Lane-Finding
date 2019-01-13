@@ -153,6 +153,11 @@ Here are some examples of the undistorted image, showing together with its origi
 
 Here are the example results after applying the distortion-corrected process mentioned above to the raw images in "/test_images/" folder:
 
+| Test image           | Original image                | Undistorted image                        |
+|:--------------------:|:-----------------------------:|:----------------------------------------:|
+|test1.jpg             |![alt text][test1]             |![alt text][test1_undistorted]            |
+|straight_lines1.jpg   |![alt text][straight_lines1]   |![alt text][straight_lines1_undistorted]  |
+
 * test1.jpg (Original image & Undistorted image)
 
 	<img src="test_images/test1.jpg" width="420" title="test1.jpg - original"/>
