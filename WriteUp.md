@@ -70,6 +70,8 @@ This is my writeup for the project "Advanced Lane Finding" of Self Driving Car N
 [straight_lines1]: ./test_images/straight_lines1.jpg "straight_lines1 - Original"
 [straight_lines1_undistorted]: ./output_images/undistorted_straight_lines1.jpg "straight_lines1 - Undistorted"
 
+[image1]: ./output_videos/project_video_output.gif "Project video output (Animation)"
+
 ---
 
 ## About Advanced Lane Finding Project
