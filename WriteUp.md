@@ -359,3 +359,13 @@ For quick reference, here are the embedded videos of the output videos uploaded 
 * [/output_videos/project_video_output.mp4](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/output_videos/project_video_output.mp4)
 
 <figure class="video_container"> <video controls="true" allowfullscreen="true" width="720" title="Final output from project video file"> <source src="output_videos/project_video_output.mp4" type="video/mp4"> </video> </figure>
+
+* [/output_videos/challenge_video_output.mp4](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/output_videos/challenge_video_output.mp4)
+
+<figure class="video_container"> <video controls="true" allowfullscreen="true" width="720" title="Final output from challenge video file"> <source src="output_videos/challenge_video_output.mp4" type="video/mp4"> </video> </figure>
+
+* [/output_videos/harder_challenge_video_output.mp4](https://github.com/pl80tech/CarND-Advanced-Lane-Finding/blob/master/output_videos/harder_challenge_video_output.mp4)
+
+<figure class="video_container"> <video controls="true" allowfullscreen="true" width="720" title="Final output from harder challenge video file"> <source src="output_videos/harder_challenge_video_output.mp4" type="video/mp4"> </video> </figure>
+
+
